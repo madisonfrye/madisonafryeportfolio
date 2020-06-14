@@ -424,12 +424,14 @@ img {
 }
 
 .pagephotocontainer {
-  grid-column: 2 / 5;
+  display: grid;
+  grid-column: 2 / 6;
   grid-gap: .5em;
 }
 
 .pagephotocontainer img {
-  grid-column: 2 / 5;
+  display: grid;
+  grid-column: 2 / 6;
   grid-gap: .5em;
   max-width: 100%;
   max-height: auto;
