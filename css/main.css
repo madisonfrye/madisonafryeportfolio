@@ -424,14 +424,14 @@ img {
 }
 
 .pagephotocontainer {
-  grid-column: 2 / 6;
+  grid-column: 2 / 4;
   display: flex;
   flex: wrap;
   grid-gap: .5em;
 }
 
 .pagephotocontainer img {
-  grid-column: 2 / 6;
+  grid-column: 2 / 4;
   display: flex;
   flex: wrap;
   grid-gap: .5em;
