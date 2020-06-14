@@ -14,604 +14,606 @@
 /* Layout */
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-content: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  font-family: 'Muli', serif;
+}
+
+  /*Grid*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.125fr 0.375fr 0.375fr 0.125fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    justify-items: center;
     align-items: center;
-    max-width: 1200px;
-    font-family: 'Muli', serif;
   }
 
-    /*Grid*/
+  .grid-container-text {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 4em;
+  }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: 0.125fr 0.375fr 0.375fr 0.125fr;
-      grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-      column-gap: 1em;
-      row-gap: 1em;
-      justify-items: center;
-      align-items: center;
-    }
+  /*01 Kezari Text*/
+  .item1 {
+    grid-column: 2 / 3;
+    justify-content: center;
+    margin: 1rem 1rem;
+  }
+  /*01 Kezari Photo*/
+  .item2 {
+    grid-column: 3 / 4;
+    justify-content: center;
+    background-color: #50597b;
+  }
+  /*01 Kezari Photo*/
+  .item2 img {
+    margin: 20px 20px;
+  }
 
-    .grid-container-text {
-      display: block;
-      flex-wrap: wrap;
-      align-items: center;
-      line-height: 4em;
-    }
+  /*02 WeClean Photo*/
+  .item3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: center;
+    background-color: #46797f;
+  }
+  /*02 WeClean Photo*/
+  .item3 img {
+    margin: 20px 20px;
+  }
+  /*02 WeClean Text*/
+  .item4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-content: center;
+    align-content: space-around;
+    margin: 1rem 1rem;
+  }
 
-    /*01 Kezari Text*/
-    .item1 {
-      grid-column: 2 / 3;
-      justify-content: center;
-      margin: 1rem 1rem;
-    }
-    /*01 Kezari Photo*/
-    .item2 {
-      grid-column: 3 / 4;
-      justify-content: center;
-      background-color: #50597b;
-    }
-    /*01 Kezari Photo*/
-    .item2 img {
-      margin: 20px 20px;
-    }
+  /*03 Recordbooks Text*/
+  .item5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-content: center;
+    margin: 1rem 1rem;
+  }
+  /*03 Recordbooks Photo*/
+  .item6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-content: center;
+    background-color: #9e3536;
+  }
+  /*03 Recordbooks Photo*/
+  .item6 img {
+    margin: 20px 20px;
+  }
 
-    /*02 WeClean Photo*/
-    .item3 {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      justify-content: center;
-      background-color: #46797f;
-    }
-    /*02 WeClean Photo*/
-    .item3 img {
-      margin: 20px 20px;
-    }
-    /*02 WeClean Text*/
-    .item4 {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-      justify-content: center;
-      align-content: space-around;
-      margin: 1rem 1rem;
-    }
+  /*04 Kyros Photo*/
+  .item7 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-content: center;
+    background-color: #b9b0d4;
+    margin: 1rem 1rem;
+  }
+  /*04 Kyros Photo*/
+  .item7 img {
+    margin: 20px 20px;
+  }
+  /*04 Kyros Text*/
+  .item8 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    justify-content: center;
+    margin: 1rem 1rem;
+  }
 
-    /*03 Recordbooks Text*/
-    .item5 {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      justify-content: center;
-      margin: 1rem 1rem;
-    }
-    /*03 Recordbooks Photo*/
-    .item6 {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      justify-content: center;
-      background-color: #9e3536;
-    }
-    /*03 Recordbooks Photo*/
-    .item6 img {
-      margin: 20px 20px;
-    }
+  /*PHOTO*/
 
-    /*04 Kyros Photo*/
-    .item7 {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      justify-content: center;
-      background-color: #b9b0d4;
-      margin: 1rem 1rem;
-    }
-    /*04 Kyros Photo*/
-    .item7 img {
-      margin: 20px 20px;
-    }
-    /*04 Kyros Text*/
-    .item8 {
-      grid-column: 3 / 4;
-      grid-row: 4 / 5;
-      justify-content: center;
-      margin: 1rem 1rem;
-    }
+  /*Singapore Sunrise*/
+  .item01 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*PHOTO*/
+  /*Bangkok Blues*/
+  .item02 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Singapore Sunrise*/
-    .item01 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Sound and Color*/
+  .item03 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Bangkok Blues*/
-    .item02 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 1 / 2;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Thai Form*/
+  .item04 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Sound and Color*/
-    .item03 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*StillLife*/
+  .item05 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Thai Form*/
-    .item04 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 2 / 3;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*NatureAtStandstill*/
+  .item06 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*StillLife*/
-    .item05 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      justify-content: bottom;
-      text-align: left;
-    }
+   /*Italian Cappuccinos*/
+   .item07 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*NatureAtStandstill*/
-    .item06 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Thai Wetmarkets*/
+  .item08 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-     /*Italian Cappuccinos*/
-     .item07 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Providence Sprung*/
+  .item09 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Thai Wetmarkets*/
-    .item08 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 4 / 5;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Indonesian Waves*/
+  .item010 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Providence Sprung*/
-    .item09 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 5 / 6;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Santa Monica*/
+  .item011 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Indonesian Waves*/
-    .item010 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 5 / 6;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*South West*/
+  .item012 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*Santa Monica*/
-    .item011 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 6 / 7;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*Darker Side*/
+  .item013 {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+    justify-content: bottom;
+    text-align: left;
+  }
 
-    /*South West*/
-    .item012 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 6 / 7;
-      justify-content: bottom;
-      text-align: left;
-    }
+  /*SunflowerPortraiture*/
+  .item014 {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+    justify-content: bottom;
+    text-align: left;
+    width: 100%;
+    height: auto;
+  }
 
-    /*Darker Side*/
-    .item013 {
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 7 / 8;
-      justify-content: bottom;
-      text-align: left;
-    }
-
-    /*SunflowerPortraiture*/
-    .item014 {
-      display: block;
-      grid-column: 3 / 4;
-      grid-row: 7 / 8;
-      justify-content: bottom;
-      text-align: left;
-      width: 100%;
-      height: auto;
-    }
-
-  /*Navigation*/
+/*Navigation*/
 
 nav ul {
-  font-size: .8em;
-  font-weight: 100;
-  line-height: .8em;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
+font-size: .8em;
+font-weight: 100;
+line-height: .8em;
+list-style: none;
+padding: 0;
+justify-content: center;
+align-items: center;
 }
 
 nav li:hover {
-  background-color: #ADD9D9;
+background-color: #ADD9D9;
 }
 
 nav li {
-  margin: 0 1em;
+margin: 0 1em;
 }
 
 nav a {
-  text-decoration: none;
-  color: gray;
-  font-weight: 700;
-  padding: .25em 0;
+text-decoration: none;
+color: gray;
+font-weight: 700;
+padding: .25em 0;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #D94A64;
+color: #D94A64;
 }
 
 .current-page {
-    border-bottom: 1px solid #D94A64;
+  border-bottom: 1px solid #D94A64;
 }
 
 .current-page:hover {
-  color: orange;
+color: orange;
 }
 
 
 ul {
-  font-size: 1.2em;
+font-size: 1.2em;
 }
 
 li {
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 body {
-  margin: 0;
-  font-size: 1rem;
-  font-family: 'Muli', sans-serif;
-  color: #2e354f;
+margin: 0;
+font-size: 1rem;
+font-family: 'Muli', sans-serif;
+color: #2e354f;
 }
 
 h1,
 h2,
 strong {
-  font-weight: 900;
+font-weight: 900;
 }
 
 @media (max-width: 800px) {
-  .col {
-    flex: 50%;
-    max-width: 50%;
-  }
+.col {
+  flex: 50%;
+  max-width: 50%;
+}
 }
 
 @media (max-width: 675px) {
-  .col {
-    flex: 0%;
-    max-width: 100%;
-    flex-wrap: wrap;
-    flex-direction: columns;
-  }
-  header {
-    flex: 0%;
-    max-width: 100%;
-    text-align: center;
-  }
-  nav ul {
-    flex-direction: column;
-    justify-content: center;
-  }
+.col {
+  flex: 0%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: columns;
+}
+header {
+  flex: 0%;
+  max-width: 100%;
+  text-align: center;
+}
+nav ul {
+  flex-direction: column;
+  justify-content: center;
+}
 }
 
 /* Contents */
 
 video {
-  width: 100%;
+width: 100%;
 }
 
 img {
-  width: 100%;
+width: 100%;
 }
 
 .aboutcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
+display: flex;
+flex-wrap: wrap;
+max-width: 1200px;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+
 }
 
 
 .page-container {
-  display: grid;
-  grid-template-columns: 0.125fr 0.125fr 0.125fr 0.375fr 0.125fr;
-  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
-  grid-gap: 1.5em;
-  max-width: 1200px;
-  justify-items: center;
-  align-items: baseline;
+display: grid;
+grid-template-columns: 0.125fr 0.125fr 0.125fr 0.375fr 0.125fr;
+grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+grid-gap: 1.5em;
+max-width: 1200px;
+justify-items: center;
+align-items: baseline;
 }
 
 
 .portfoliopiecetitle {
-  grid-column: 2 / 4;
-  font-family: 'Taviraj', serif;
-  font-style: italic;
-  font-weight: 800;
-  color: #D98179;
-  font-size: 3em;
-  padding: 1em 0em;
+grid-column: 2 / 4;
+font-family: 'Taviraj', serif;
+font-style: italic;
+font-weight: 800;
+color: #D98179;
+font-size: 3em;
+padding: 1em 0em;
 }
 
 .phototitle {
-  font-family: 'Taviraj', serif;
-  font-style: italic;
-  font-weight: 800;
-  color: #F2B05E;
-  font-size: 1.2em;
-  padding: .5em 0;
-  letter-spacing: 2px;
+font-family: 'Taviraj', serif;
+font-style: italic;
+font-weight: 800;
+color: #F2B05E;
+font-size: 1.2em;
+padding: .5em 0;
+letter-spacing: 2px;
 }
 
 .portfoliopiecetext {
-  grid-column: 2 / 3;
-  font-family: 'Taviraj', serif;
-  color: #D98179;
-  font-size: 1em;
-  text-align: center;
+grid-column: 2 / 3;
+font-family: 'Taviraj', serif;
+color: #D98179;
+font-size: 1em;
+text-align: center;
 }
 
 .pagetitle {
-  grid-column: 3 / 5;
-  font-family: 'Taviraj', serif;
-  font-style: italic;
-  font-weight: 800;
-  color: #D98179;
-  font-size: 4em;
-  padding: 1em 0em;
-  text-align: center;
+grid-column: 3 / 5;
+font-family: 'Taviraj', serif;
+font-style: italic;
+font-weight: 800;
+color: #D98179;
+font-size: 4em;
+padding: 1em 0em;
+text-align: center;
 }
 
 .pagetext {
-  display: block;
-  grid-column: 4 / 6;
-  font-family: 'Taviraj', serif;
-  color: #2e354f;
-  font-size: 1em;
-  text-align: left;
-  align-content: left;
+display: block;
+grid-column: 4 / 6;
+font-family: 'Taviraj', serif;
+color: #2e354f;
+font-size: 1em;
+text-align: left;
+align-content: left;
 }
 
 .pagephotocontainer {
-  display: grid;
-  grid-column: 2 / 4;
-  grid-gap: .5em;
+grid-column: 2 / 6;
+display: flex;
+flex: wrap;
+grid-gap: .5em;
 }
 
 .pagephotocontainer img {
-  display: grid;
-  grid-column: 2 / 4;
-  grid-gap: .5em;
-  max-width: 100%;
-  max-height: auto;
+grid-column: 2 / 6;
+display: flex;
+flex: wrap;
+grid-gap: .5em;
+max-width: 100%;
+max-height: auto;
 }
 
 .category {
-  grid-column: 2 / 3;
-  font-family: Poppins, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #D98179;
-  letter-spacing: 3px;
+grid-column: 2 / 3;
+font-family: Poppins, sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+color: #D98179;
+letter-spacing: 3px;
 }
 
 
 h2:hover {
-  color: #c44536;
+color: #c44536;
 }
 
 .col img {
-  max-width: 100%;
-  max-height: auto;
-  display: block;
+max-width: 100%;
+max-height: auto;
+display: block;
 }
 
 .navcontainer {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 
 .headercontaineritem {
-  order: 1;
+order: 1;
 }
 
 .subtitle {
-  font-size: .75em;
+font-size: .75em;
 }
 
 .topleft {
-  flex: wrap;
-  align-items: center;
-  margin: 0 1rem;
+flex: wrap;
+align-items: center;
+margin: 0 1rem;
 }
 
 .portfolioblurb {
-  position: center;
+position: center;
 }
 
 .icon {
-  max-width: 2em;
-  padding: 1em 2em;
+max-width: 2em;
+padding: 1em 2em;
 }
 
 /* Typography */
 h1 {
-  font-size: 2em;
-  margin: 0;
-  font-family: 'Taviraj', serif;
-  color: #D98179;
-  text-align: center;
-  padding: 5px 0;
+font-size: 2em;
+margin: 0;
+font-family: 'Taviraj', serif;
+color: #D98179;
+text-align: center;
+padding: 5px 0;
 }
-  
+
 h2 {
-  font-size: 1.3em;
-  font-family: 'Taviraj', serif;
-  color: #D98179;
+font-size: 1.3em;
+font-family: 'Taviraj', serif;
+color: #D98179;
 }
 
 h3 {
-  font-size: 1em;
-  font-family: Taviraj, serif;
-  color: #D98179;
+font-size: 1em;
+font-family: Taviraj, serif;
+color: #D98179;
 }
 
 h4 {
-  font-size: .7em;
-  font-family: Taviraj, serif;
+font-size: .7em;
+font-family: Taviraj, serif;
 }
 
 h5 {
-  font-size: .4em;
-  font-family: Taviraj, serif;
+font-size: .4em;
+font-family: Taviraj, serif;
 }
 
 
 a {
-  color: #2e354f;
-  text-decoration: none;
+color: #2e354f;
+text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color:  #D98179;
+color:  #D98179;
 }
 
 h2:hover,
 h2:focus {
-  color: #D98179;
+color: #D98179;
 }
 
 h3:hover,
 h3:focus {
-  color: #D98179;
+color: #D98179;
 }
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  padding: 10px 25px;
-  text-decoration: none;
+display: inline-block;
+padding: 10px 25px;
+text-decoration: none;
 }
 
 .btn-accent {
-  background: #ef5839;
-  color: #fff;
+background: #ef5839;
+color: #fff;
 }
 
 .btn-accent:hover {
-  color: #2e354f;
-  background: #d4b44c;
+color: #2e354f;
+background: #d4b44c;
 }
 
 .btn-big {
-  font-size: 24px;
+font-size: 24px;
 }
 
 .btn-small {
-  font-size: 16px;
+font-size: 16px;
 }
 
 .btn-white {
-  background: #fff;
-  color: #2e354f;
+background: #fff;
+color: #2e354f;
 }
 
 .btn-white:hover {
-  color: #2e354f;
-  background: #999;
+color: #2e354f;
+background: #999;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+background: #b3d4fc;
+text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+background: #b3d4fc;
+text-shadow: none;
 }
 
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 
 audio,
 canvas,
@@ -619,52 +621,52 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+vertical-align: middle;
 }
 
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+border: 0;
+margin: 0;
+padding: 0;
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 
 textarea {
-  resize: vertical;
+resize: vertical;
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+ Browser Upgrade Prompt
+ ========================================================================== */
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+margin: 0.2em 0;
+background: #ccc;
+color: #000;
+padding: 0.2em 0;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+ Author's custom styles
+ ========================================================================== */
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+ Helper classes
+ ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 
 .hidden {
-  display: none !important;
+display: none !important;
 }
 
 /*
@@ -677,16 +679,16 @@ textarea {
 */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+border: 0;
+clip: rect(0, 0, 0, 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+/* 1 */
 }
 
 /*
@@ -697,13 +699,13 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+white-space: inherit;
+width: auto;
 }
 
 /*
@@ -711,7 +713,7 @@ textarea {
 */
 
 .invisible {
-  visibility: hidden;
+visibility: hidden;
 }
 
 /*
@@ -728,95 +730,94 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+content: " ";
+/* 1 */
+display: table;
+/* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+clear: both;
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+ EXAMPLE Media Queries for Responsive Design.
+ These examples override the primary ('mobile first') styles.
+ Modify as content requires.
+ ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+ Print styles.
+ Inlined to avoid the additional HTTP request:
+ https://www.phpied.com/delay-loading-your-print-css/
+ ========================================================================== */
 
 @media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre {
-    white-space: pre-wrap !important;
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+*,
+*:before,
+*:after {
+  background: transparent !important;
+  color: #000 !important;
+  /* Black prints faster */
+  box-shadow: none !important;
+  text-shadow: none !important;
 }
-
+a,
+a:visited {
+  text-decoration: underline;
+}
+a[href]:after {
+  content: " (" attr(href) ")";
+}
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+/*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+  content: "";
+}
+pre {
+  white-space: pre-wrap !important;
+}
+pre,
+blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+/*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+thead {
+  display: table-header-group;
+}
+tr,
+img {
+  page-break-inside: avoid;
+}
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+h2,
+h3 {
+  page-break-after: avoid;
+}
+}
