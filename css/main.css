@@ -425,15 +425,13 @@ align-content: left;
 
 .pagephotocontainer {
 grid-column: 2 / 6;
-display: flex;
-flex: wrap;
+display: grid;
 grid-gap: .5em;
 }
 
 .pagephotocontainer img {
 grid-column: 2 / 6;
-display: flex;
-flex: wrap;
+display: grid;
 grid-gap: .5em;
 max-width: 100%;
 max-height: auto;
